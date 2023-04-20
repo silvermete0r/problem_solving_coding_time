@@ -1,0 +1,268 @@
+PL: Python 
+
+***
+Task #1 - Square values Sum of positive numbers <=n:
+
+def func(n):
+    if n in (0,1):
+        return n
+    else:
+        return n*n + func(n-1)
+print(func(4))
+
+
+***
+Task #2 - Fibonacci Sequence n-th element:
+
+def func(n):
+    if n <= 1:
+        return 1
+    else:
+        return func(n-1) + func(n-2)
+print(func(5))
+
+
+***
+Task #3 - Sum of the Array elements <n index i:
+
+data = [1,2,3,4,5,6,7,8,9,10]
+def func(n):
+    if n == 1:
+        return data[0]
+    else:
+        return data[n-1] + func(data[n-2])
+print(func(5))
+
+
+***
+Task #4 - Sum of the <=n positive numbers:
+
+def func(n):
+    if n == 1:
+        return 1
+    else:
+        return n + func(n-1)
+print(func(5))
+
+
+***
+Task #5 - Sum of the power b^n series:
+
+def func(b, n):
+    if n == 0:
+        return 1
+    else:
+        return pow(b,n) + func(b,n-1)
+print(func(4,3))
+
+
+***
+Task #6 - Max Element of Array:
+
+data = [1,23,0,-4,5,6,72,8,10,-10]
+def func(data, i, imax):
+    if i == len(data):
+        return data[imax]
+    else:
+        if data[i]>data[imax]:
+            imax = i
+        i+=1
+        return func(data, i, imax)
+print(func(data, 1, 0))
+
+
+***
+Task #7 - GCD Euclid Algorithm:
+
+def func(a, b):
+    temp = b
+    b = a%b
+    if b == 0:
+        return temp
+    else:
+        return func(temp, b)
+print(func(10,12))
+
+
+***
+Task #8 - Reverse Sequence <=n positive numbers:
+
+def func(n):
+    if n == 1:
+        return 1
+    else:
+        print(n, end=' ')
+        return func(n-1)
+print(func(5))
+
+
+***
+Task #9 - Display given sequence of Strings in reverse order:
+
+def func(store, n):
+    if n == 0:
+        return store
+    else:
+        store = str(input()).lower() + '\n' + store
+        return func(store, n-1)
+n = int(input())
+print(func("", n))
+
+
+***
+Task #10 - Sum of digits of a given number:
+
+def func(n):
+    if n == 0:
+        return 0
+    else:
+        return n%10 + func(n//10)
+n = int(input())
+print(func(n))
+
+-------------------------------------------------------------------
+
+PL: Java
+
+***
+Task #1 - Square values Sum of positive numbers <=n:
+
+public static int func(int n) {
+    if (n == 0 || n == 1) {
+        return n;
+    } else {
+        return n*n + func(n-1);
+    }
+}
+System.out.println(func(4));
+
+
+
+***
+Task #2 - Fibonacci Sequence n-th element:
+
+public static int func(int n) {
+    if (n <= 1) {
+        return 1;
+    } else {
+        return func(n-1) + func(n-2);
+    }
+}
+System.out.println(func(5));
+
+
+***
+Task #3 - Sum of the Array elements <n index i:
+
+int[] data = {1,2,3,4,5,6,7,8,9,10};
+public static int func(int n) {
+    if (n == 1) {
+        return data[0];
+    } else {
+        return data[n-1] + func(n-1);
+    }
+}
+System.out.println(func(5));
+
+
+***
+Task #4 - Sum of the <=n positive numbers:
+
+public static int func(int n) {
+    if (n == 1) {
+        return 1;
+    } else {
+        return n + func(n-1);
+    }
+}
+System.out.println(func(5));
+
+
+***
+Task #5 - Sum of the power b^n series:
+
+public static int func(int b, int n) {
+    if (n == 0) {
+        return 1;
+    } else {
+        return (int) Math.pow(b,n) + func(b,n-1);
+    }
+}
+System.out.println(func(4,3));
+
+
+***
+Task #6 - Max Element of Array:
+
+int[] data = {1,23,0,-4,5,6,72,8,10,-10};
+public static int func(int[] data, int i, int imax) {
+    if (i == data.length) {
+        return data[imax];
+    } else {
+        if (data[i]>data[imax]) {
+            imax = i;
+        }
+        i+=1;
+        return func(data, i, imax);
+    }
+}
+System.out.println(func(data, 1, 0));
+
+
+***
+Task #7 - GCD Euclid Algorithm:
+
+public static int func(int a, int b) {
+    int temp = b;
+    b = a%b;
+    if (b == 0) {
+        return temp;
+    } else {
+        return func(temp, b);
+    }
+}
+System.out.println(func(10,12));
+
+
+***
+Task #8 - Reverse Sequence <=n positive numbers:
+
+public static int func(int n) {
+    if (n == 1) {
+        System.out.print(1 + " ");
+        return 1;
+    } else {
+        System.out.print(n + " ");
+        return func(n-1);
+    }
+}
+func(5);
+
+
+***
+Task #9 - Display given sequence of Strings in reverse order:
+
+public static String func(String store, int n) {
+    if (n == 0) {
+        return store;
+    } else {
+        String input = new Scanner(System.in).nextLine().toLowerCase();
+        store = input + "\n" + store;
+        return func(store, n-1);
+    }
+}
+int n = new Scanner(System.in).nextInt();
+System.out.println(func("", n));
+
+
+***
+Task #10 - Sum of digits of a given number:
+
+public static int func(int n) {
+    if (n == 0) {
+        return 0;
+    } else {
+        return n%10 + func(n/10);
+}
+int n = new Scanner(System.in).nextInt();
+System.out.println(func(n));
