@@ -1,2 +1,2 @@
-# competitive_programming_solutions
+# Problem Solving (Coding Time)
 This is a repository where my program codes will be collected for the most interesting programming tasks encountered on coding platforms and competitions.
