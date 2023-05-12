@@ -1,7 +1,7 @@
 def is_white(s):
   x1 = ord(s[0]) - ord('A') + 1
   x2 = int(s[1])
-  return (x1 + x2) % 2 == 0
+  return (x1 + x2) % 2
 
 def main():
   s = input()
