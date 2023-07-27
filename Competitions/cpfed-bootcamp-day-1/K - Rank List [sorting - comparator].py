@@ -1,3 +1,4 @@
+# https://vjudge.net/problem/CodeForces-166A/origin
 # Rank List
 def solve(teams, m):
     teams.sort(key=lambda x: (-x[0], x[1]))
