@@ -1,3 +1,5 @@
+# https://codeforces.com/problemset/problem/21/C
+
 #include <bits/stdc++.h>
 using namespace std;
 #define read(type) readInt<type>() // Fast read
