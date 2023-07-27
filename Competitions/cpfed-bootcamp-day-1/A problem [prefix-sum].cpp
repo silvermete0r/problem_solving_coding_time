@@ -34,14 +34,14 @@ ll solve(vector<ll>& vec, ll n) {
 
 int32_t main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    ll n;
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	ll n;
 	cin>>n;
 	vector<ll> vec(n);
 	for(ll i=0; i<n; i++) {
 		cin>>vec[i];
 	}
 	cout<<solve(vec, n);
-    return 0;
+    	return 0;
 }
