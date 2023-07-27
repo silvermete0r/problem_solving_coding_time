@@ -1,3 +1,5 @@
+# https://vjudge.net/problem/CodeForces-1011B/origin
+
 from collections import Counter
 
 def solve(n, food):
