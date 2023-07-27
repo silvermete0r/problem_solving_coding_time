@@ -1,3 +1,5 @@
+# https://vjudge.net/problem/CodeForces-618B/origin
+
 def solve():
     n = int(input())
     base = [0 for _ in range(n)]
