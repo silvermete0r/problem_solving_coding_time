@@ -1,3 +1,5 @@
+# https://vjudge.net/problem/CodeForces-913B/origin
+
 def solve(vals, n):
     mp = {}
     i = 1
