@@ -1,2 +1,2 @@
-# Day 1
+# Day 2 🤯
 > Combinatorics, Permutations & Itertools
