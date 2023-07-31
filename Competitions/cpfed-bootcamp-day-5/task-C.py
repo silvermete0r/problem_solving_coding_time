@@ -1,4 +1,4 @@
-// https://codeforces.com/problemset/problem/116/C
+# https://codeforces.com/problemset/problem/116/C
 
 from collections import defaultdict
 
