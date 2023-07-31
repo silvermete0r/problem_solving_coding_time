@@ -1,3 +1,5 @@
+// https://codeforces.com/problemset/problem/580/A
+
 #include <iostream>
 #include <fstream>
 #include <vector>
