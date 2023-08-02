@@ -1,0 +1,47 @@
+import heapq
+
+def dijkstra(graph, start_vertex, n):
+    D = [1e10] * (n + 1)
+    D[start_vertex] = 0
+    path = [-1] * (n + 1)
+
+    pq = [(0, start_vertex)]
+
+    while pq:
+        (dist, current_vertex) = heapq.heappop(pq)
+
+        for neighbor, distance in enumerate(graph[current_vertex]):
+            if distance != -1:
+                old_cost = D[neighbor]
+                new_cost = D[current_vertex] + distance
+                if new_cost < old_cost:
+                    heapq.heappush(pq, (new_cost, neighbor))
+                    D[neighbor] = new_cost
+                    path[neighbor] = current_vertex
+
+    if path[n] == -1:
+        return -1
+
+    final_path = []
+    f = n
+    while f != -1:
+        final_path.append(f)
+        f = path[f]
+
+    return reversed(final_path)
+
+
+n, m = map(int, input().strip().split())
+g = [[-1] * (n + 1) for _ in range(n + 1)]
+
+for i in range(m):
+    a, b, c = map(int, input().strip().split())
+    g[a][b] = c
+    g[b][a] = c
+
+final_path = dijkstra(g, 1, n)
+
+if final_path == -1:
+    print(-1)
+else:
+    print(*final_path)
