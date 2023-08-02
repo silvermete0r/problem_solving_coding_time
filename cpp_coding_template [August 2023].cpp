@@ -1,5 +1,7 @@
 // link: task permalink
 
+#pragma GCC optimize("O3")
+
 #include <bits/stdc++.h>
 
 #define uset unordered_set
