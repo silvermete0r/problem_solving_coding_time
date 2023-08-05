@@ -27,6 +27,8 @@
 
 using namespace std;
 
+bool comp() {}
+
 void solve() {}
 
 int32_t main() {
