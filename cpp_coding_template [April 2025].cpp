@@ -1,4 +1,6 @@
-// link: task permalink
+/*
+@silvermete0r
+*/
 
 #pragma GCC optimize("O3")
 
@@ -13,15 +15,21 @@ const MOD = 1e9 + 7;
 
 using namespace std;
 
-void solve() {}
+/* NOTES:
+
+*/
+
+void solve() {
+	
+}
 
 int32_t main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
     //	TxtIO;
-    int t = 1;    
-    cin>>t;
-    while(t--) solve();
+	int t = 1;
+	cin>>t;
+	while(t--) solve();
     return 0;
 }
