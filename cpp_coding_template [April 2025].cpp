@@ -11,8 +11,8 @@
 #define TxtIO freopen("input.txt","r",stdin); freopen("output.txt","w",stdout);
 
 const double PI = 3.1415926535897932384626433832795;
-const ll INF = 1e18 + 7;
-const ll MOD = 1e9 + 7;
+const int INF = 1e9 + 7;
+const int MOD = 1e9 + 7;
 
 using namespace std;
 
