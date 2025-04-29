@@ -32,6 +32,6 @@ int32_t main() {
     //	TxtIO;
 	int t = 1;
 	cin>>t;
-	while(t--) solve(vec);
+	while(t--) solve();
     return 0;
 }
