@@ -2,6 +2,7 @@
 This is a repository where my program codes will be collected for the most interesting programming tasks encountered on coding platforms and competitions.
  - **LeetCode profile:** https://leetcode.com/silvermete0r
  - **HackerRank profile:** https://www.hackerrank.com/silvermete0r
+ - **CodeForces profile:** https://codeforces.com/profile/silvermete0r
 
 ## Dev Tools [IDEs]
  - **CPP:** [Dev-C++](https://www.bloodshed.net/)
