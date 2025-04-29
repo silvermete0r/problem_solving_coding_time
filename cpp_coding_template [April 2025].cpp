@@ -7,12 +7,13 @@
 #include <bits/stdc++.h>
 
 #define all(x) (x).begin(), (x).end()
+#define rall(x) (x).rbegin(), (x).rend()
 #define ll long long
 #define TxtIO freopen("input.txt","r",stdin); freopen("output.txt","w",stdout);
 
-const double PI = 3.1415926535897932384626433832795;
-const int INF = 1e9 + 7;
+const int PI = 3.1415926535897932384626433832795;
 const int MOD = 1e9 + 7;
+const int INF = 1e9 + 7;
 
 using namespace std;
 
@@ -31,6 +32,6 @@ int32_t main() {
     //	TxtIO;
 	int t = 1;
 	cin>>t;
-	while(t--) solve();
+	while(t--) solve(vec);
     return 0;
 }
