@@ -12,7 +12,7 @@ string get_suffix(string s, int n) {
  
 void solve() {
     int n; cin>>n;
-    int k = binpow(2, n);
+    int k = pow(2, n);
     for(int i=0; i<k; i++) {
         int g = gray_code(i);
         bitset<16> bits(g);
