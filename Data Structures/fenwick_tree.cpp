@@ -45,7 +45,7 @@ struct FenwickTree {
         }
     }
 	
-	  // add `delta` to index i
+    // add `delta` to index i
     void add(int i, T delta) {
         for (; i < n; i = i | (i + 1)) {
             bit[i] += delta;
@@ -59,12 +59,6 @@ struct FenwickTree {
             res += bit[r];
         }
         return res;
-    }
-    
-    // update/set logic*
-    void set(int i, ll val) {
-	    ll cur = sum(i, i);
-	    add(i, val - cur);
 	}
 
     // sum of range [l, r]
@@ -72,6 +66,12 @@ struct FenwickTree {
         if (l > r) return 0;
         return sum(r) - (l ? sum(l - 1) : 0);
     }
+
+	// update/set logic*
+    void set(int i, T val) {
+	    T cur = sum(i, i);
+	    add(i, val - cur);
+	}
 };
 
 void solve() {
