@@ -36,6 +36,7 @@ struct SparseTable {
 		}
 		for(int k=1; k<log2; k++) {
 			for(int i=0; i+(1<<k)<=n; i++) {
+				// can be used in statis range queries also for max, gcd, etc.
 				st[i][k] = min(st[i][k-1], st[i+(1<<(k-1))][k-1]);	
 			}
 		}
