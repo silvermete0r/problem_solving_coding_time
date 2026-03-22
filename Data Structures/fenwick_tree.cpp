@@ -20,7 +20,7 @@ using namespace std;
 
 /* NOTES:
 Fenwick Tree (Binary Indexed Tree) = prefix sum represented as a sum of binary-sized blocks
-* point update + prefix/range sum
+* point update + prefix/range sum + for XOR
 * fast and simple alternative to segment tree
 
 cses problem ref.: https://cses.fi/problemset/task/1648/
