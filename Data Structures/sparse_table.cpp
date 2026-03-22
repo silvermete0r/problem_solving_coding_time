@@ -21,6 +21,8 @@ using namespace std;
 /* NOTES:
 After an initial preprocessing phase that takes $O(N \log N)$ time, it can answer any minimum range query in absolute constant time, $O(1)$. 
 It achieves this by taking advantage of the fact that any range can be covered by exactly two overlapping intervals whose lengths are powers of 2.
+
+cses problem ref.: https://cses.fi/problemset/task/1647
 */
 
 template <typename T>
